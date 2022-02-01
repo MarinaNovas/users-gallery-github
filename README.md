@@ -1,7 +1,7 @@
 # Users Gallery Github
 
 
-This is a simple React application in which the user can search images and app gives infinity list of them.
+This is a testing task for a position front-end developer.
 
 ### Tech Stack:
 
