@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import './css/reset.css';
 import './css/style.css';
 import UsersList from './components/UsersList';
