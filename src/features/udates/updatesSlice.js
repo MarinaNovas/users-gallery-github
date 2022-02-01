@@ -15,7 +15,6 @@ export const updatesSlice = createSlice({
 });
 
 export const fetchUserUpdates = (url)=>{
-  console.log(url);
   return async (dispatch, getState)=>{
     try{
       const response = await fetch(url);

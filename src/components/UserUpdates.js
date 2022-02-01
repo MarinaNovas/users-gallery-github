@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import UpdateCard from "./UpdateCard";
+import { nanoid } from '@reduxjs/toolkit'
 
 function UsersUdates(){
   const updates = useSelector(state=>state.updates);
@@ -8,8 +9,8 @@ function UsersUdates(){
     <div className="updates-wrapper">
       {
         updates.length && updates.map(update=>(
-          //UpdateCard({name,html_url,description,language,updated_at})
           <UpdateCard
+            key={nanoid()}
             name={update.name}
             html_url={update.html_url}
             description={update.description}

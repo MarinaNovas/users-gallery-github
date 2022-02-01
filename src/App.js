@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import UsersList from './features/users/UsersList';
+import './css/reset.css';
+import './css/style.css';
+import UsersList from './components/UsersList';
 import UserInformation from './components/UserInformation';
+import MainHeader from './components/MainHeader';
 
 function App() {
   return (
       <div className="app">
-        <header>
-          <h1>Users Github</h1>
-        </header>
+        <MainHeader/>
         <UsersList itemsPerPage = {12}/>
         <UserInformation/>
       </div>

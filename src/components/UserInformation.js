@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import {useDispatch,useSelector} from "react-redux";
-import { fetchUserUpdates, resetUpdates } from "../features/udates/updatesSlice";
+import { fetchUserUpdates} from "../features/udates/updatesSlice";
 import UserUpdates from "./UserUpdates";
 
 
@@ -15,7 +15,7 @@ function UserInformation(){
     dispatch(fetchUserUpdates(`${user.repos_url}?per_page=12`));
   },[user,dispatch]);
   return(
-    <section className="user-info">
+    <div className="user-info">
       <header className="user-info__header">
         <h2>{user.login}</h2>
       </header>
@@ -33,7 +33,7 @@ function UserInformation(){
           <UserUpdates/>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
