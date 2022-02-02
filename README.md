@@ -12,4 +12,4 @@ This is a testing task for a position front-end developer.
 
 ### Deploy:
 
-**`Deployed here:`** 
+**`Deployed here:`** https://users-gallery-sms.herokuapp.com/
